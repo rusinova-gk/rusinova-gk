@@ -1816,7 +1816,11 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
     #экран-03 .шаг-маршрута:nth-child(n) { grid-column: auto; }
     #экран-03 .шаг-маршрута::after { display: none; }
     #экран-03 .шаг-маршрута .значок { width: 48px; height: 48px; }
-    #экран-03 .записка { position: static; margin-top: 18px; transform: none; }
+
+    #экран-03 .маршрут-обёртка { padding-bottom: 28px; }
+    #экран-03 .записка { top: auto; right: 6px; bottom: 0; width: auto; min-width: calc(50% - 22px); padding: 14px 12px 12px; transform: rotate(3deg); }
+    #экран-03 .записка ul { gap: 4px; }
+    #экран-03 .записка li { font-size: var(--кегль-текст); gap: 6px; white-space: nowrap; }
   }
 
 /* экран 04 */
