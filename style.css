@@ -2413,10 +2413,28 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   }
 
 /* экран 12 */
-#экран-12 .подвал__сетка { grid-template-columns: 1fr auto; }
-  @media (max-width: 699px) { #экран-12 .подвал__сетка { grid-template-columns: 1fr; } }
-
-  #экран-12 .подвал__сетка { align-items: last baseline; }
-  #экран-12 .подвал__контакты { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 1.5em; row-gap: .25em; }
-  #экран-12 .подвал__контакты h4 { margin: 0; }
-  #экран-12 .подвал__контакты .подвал__ссылки { display: flex; flex-wrap: wrap; column-gap: 1.5em; row-gap: .25em; }
+#экран-12 .подвал__сетка { grid-template-columns: 1fr auto; align-items: center; gap: 1.5rem 3rem; }
+  #экран-12 .подвал__лого { display: block; font-weight: 700;
+    font-size: var(--кегль-цифра); line-height: 1.2; }
+  #экран-12 .подвал__кто p { margin: .15em 0 0; font-size: var(--кегль-лид); line-height: 1.35;
+    color: var(--цвет-текст-тихий); }
+  #экран-12 .подвал__контакты { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 0; }
+  #экран-12 .подвал__контакт { display: inline-flex; align-items: center; gap: 1rem;
+    font-size: var(--кегль-лид); color: var(--цвет-текст); }
+  #экран-12 .подвал__контакт + .подвал__контакт { margin-left: 1.5rem; padding-left: 1.5rem;
+    border-left: 1px solid var(--цвет-линия); }
+  #экран-12 .подвал__значок { flex: none; display: grid; place-items: center; width: 2.6em; height: 2.6em;
+    border-radius: 50%; background: var(--цвет-фон-2); color: var(--цвет-текст); }
+  #экран-12 .подвал__значок svg { width: 1.2em; height: 1.2em; color: inherit; }
+  #экран-12 a.подвал__контакт > span:last-child { border-bottom: 1px solid currentColor; padding-bottom: .1em; }
+  #экран-12 a.подвал__контакт:hover { text-decoration: none; color: var(--цвет-тёплый-тёмный); }
+  #экран-12 .подвал__низ span:first-child { margin-right: auto; }
+  #экран-12 .подвал__низ span + span:last-child { padding-left: 1.5rem; border-left: 1px solid var(--цвет-линия); }
+  #экран-12 .подвал__низ { column-gap: 1.5rem; align-items: center; }
+  @media (max-width: 899px) {
+    #экран-12 .подвал__сетка { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 479px) {
+    #экран-12 .подвал__контакты { flex-direction: column; align-items: flex-start; }
+    #экран-12 .подвал__контакт + .подвал__контакт { margin-left: 0; padding-left: 0; border-left: 0; }
+  }
