@@ -2415,3 +2415,8 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 /* экран 12 */
 #экран-12 .подвал__сетка { grid-template-columns: 1fr auto; }
   @media (max-width: 699px) { #экран-12 .подвал__сетка { grid-template-columns: 1fr; } }
+
+  #экран-12 .подвал__сетка { align-items: last baseline; }
+  #экран-12 .подвал__контакты { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 1.5em; row-gap: .25em; }
+  #экран-12 .подвал__контакты h4 { margin: 0; }
+  #экран-12 .подвал__контакты .подвал__ссылки { display: flex; flex-wrap: wrap; column-gap: 1.5em; row-gap: .25em; }
