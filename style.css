@@ -2017,6 +2017,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-07 .кикер { justify-content: center; background: none; padding: 0; border-radius: 0; box-shadow: none; text-transform: uppercase; letter-spacing: .14em; font-weight: 400; }
   #экран-07 .раскладка { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
   #экран-07 .отзыв--главный .отзыв__кто { margin-top: auto; }
+  #экран-07 .отзыв--главный .кто > span:not(.звёзды) { white-space: nowrap; }
   #экран-07 .сетка-отзывов { display: contents; }
   #экран-07 .отзыв--главный { grid-column: span 2; }
   #экран-07 .отзыв { margin: 0; padding: 20px 22px 18px; display: flex; flex-direction: column; gap: 8px; border-radius: var(--радиус-плитки); }
@@ -2028,7 +2029,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-07 .буква { flex: none; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: var(--кегль-текст); }
   #экран-07 .кто { display: flex; flex-direction: column; gap: 2px; font-size: var(--кегль-кикер); }
   #экран-07 .кто b { font-size: var(--кегль-текст); }
-  #экран-07 .кто a { text-decoration: underline; text-underline-offset: 3px; }
+  #экран-07 .кто a { text-decoration: underline; text-underline-offset: 3px; padding: 13px 8px; margin: 0 -8px; }
   #экран-07 .звёзды { display: flex; gap: 2px; margin-top: 2px; }
   #экран-07 .звёзды svg { width: 15px; height: 15px; fill: currentColor; }
   #экран-07 .чип-отзыва { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; margin: 4px 0 0; padding: 6px 14px 6px 6px;
@@ -2109,6 +2110,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
       font-style: italic; font-size: var(--кегль-лид); line-height: 1.35; transform: rotate(-5deg); transform-origin: left top; }
   #экран-08 .колонка-фото { position: relative; }
   #экран-08 .портрет { margin: 0; height: 100%; }
+  #экран-08 .портрет picture { display: contents; }
   #экран-08 .портрет img { display: block; width: 100%; height: 100%; min-height: 560px; object-fit: cover; object-position: 50% 30%;
       border-radius: var(--радиус-плитки); box-shadow: var(--тень-чип); }
   #экран-08 .записка { position: absolute; top: 28px; right: -34px; z-index: 2; white-space: nowrap; margin: 0; padding: 14px 18px; transform: rotate(5deg);
@@ -2241,7 +2243,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 #экран-10 { padding-block: calc(var(--отступ-секции-тихо) * .6); }
   #экран-10 .шапка-цен { position: relative; }
   #экран-10 .секция__шапка { text-align: center; max-width: 760px; margin: 0 auto 40px; }
-  #экран-10 .секция__шапка h2 { margin: 0 0 14px; }
+  #экран-10 .секция__шапка h2 { margin: 0 auto 14px; }
   #экран-10 .секция__шапка .лид { margin: 0 auto; }
   #экран-10 .кикер { background: none; padding: 0; border-radius: 0; box-shadow: none; text-transform: uppercase; letter-spacing: .14em; font-weight: 400; }
   #экран-10 .секция__шапка .кикер { width: fit-content; margin-inline: auto; display: flex; align-items: center; gap: 16px; justify-content: center; }
